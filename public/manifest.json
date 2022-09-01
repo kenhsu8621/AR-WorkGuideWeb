@@ -1,0 +1,14 @@
+{
+    "short_name": "AR-Assist",
+    "name": "AR-Remote-Assist-Web12312",
+    "description": "AR-Remote-Assist-Web helps you work together",
+    "start_url": "/login",
+    "background_color": "#ecf0f2",
+    "display": "fullscreen",
+    "theme_color": "#34aeab",
+    "version": "1.0",
+    "gcm_sender_id": "755753050872",
+    "permissions": [
+        "background"
+    ]
+}

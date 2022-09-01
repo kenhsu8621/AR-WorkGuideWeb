@@ -1,0 +1,88 @@
+// $mainBlue: #00b7ff;
+// .mainBlue {
+//   color: $mainBlue;
+// }
+// $mainBlueHover: #4dcdff;
+// .mainBlueHover {
+//   color: $mainBlueHover;
+// }
+$blue: #2173c9;
+.blue {
+  color: $blue;
+}
+$blueHover: #185597;
+.blueHover {
+  color: $blueHover;
+}
+$darkBlue: #0a519c;
+.darkBlue {
+  color: $darkBlue;
+}
+$grey: #7b7b7b;
+.grey {
+  color: $grey;
+}
+$greyHover: #606060;
+.greyHover {
+  color: $greyHover;
+}
+$lightgrey: #d7d7d7;
+.lightgrey {
+  color: $lightgrey;
+}
+$green: #3fb182;
+.green {
+  color: $green;
+}
+$greenHover: #37926c;
+.greenHover {
+  color: $greenHover;
+}
+$red: #d44e4e;
+.red {
+  color: $red;
+}
+$redHover: #b44b4b;
+.redHover {
+  color: $redHover;
+}
+$placeholder: #aeaeae;
+.placeholder {
+  color: $placeholder;
+}
+$placeholderHover: #7b7b7b;
+.placeholderHover {
+  color: $placeholderHover;
+}
+$white: #fff;
+.white {
+  color: $white;
+}
+.custom-pagination {
+  width: calc(100% - 60px);
+
+  /deep/ .pagination {
+    float: right;
+  }
+
+  /deep/ .VuePagination__pagination-item-prev-chunk .page-link,
+  /deep/ .VuePagination__pagination-item-next-chunk .page-link {
+    padding: 7px;
+  }
+
+  /deep/ .page-link {
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+    margin: 0 2px;
+    text-align: center;
+    color: $blue;
+    cursor: pointer;
+  }
+
+  /deep/ .page-link.active {
+    color: #fff;
+    background-color: $blue;
+    border-color: $blue;
+  }
+}

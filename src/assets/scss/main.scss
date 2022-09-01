@@ -1,0 +1,206 @@
+@import "_variables.scss";
+// @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap");
+@font-face {
+  font-family: "Noto Sans TC";
+  font-weight: lighter;
+  font-style: lighter;
+  src: url("~@/assets/fonts/NotoSansTC-Light.otf");
+}
+
+body {
+  // background-image: url("~@/assets/images/background.png");
+  // 隱藏scrollbar但保持滾動功能
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#app {
+  font-family: "Noto Sans TC", Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+.ra-main-content {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.ra-confirm-btn {
+  width: 300px !important;
+  height: 50px !important;
+  font-size: 14px !important;
+  border: 1px solid $blue !important;
+  background-color: $blue !important;
+
+  &:hover {
+    background-color: $blueHover !important;
+    border: 1px solid $blueHover !important;
+  }
+}
+
+.ra-confirm-btn-alt {
+  width: 300px !important;
+  height: 50px !important;
+  font-size: 14px !important;
+  color: $blue !important;
+  border: 1px solid $blue !important;
+  background-color: #fff !important;
+
+  &:hover {
+    color: $blue !important;
+    border: 1px solid $blue !important;
+    background-color: #fff !important;
+  }
+}
+
+.ra-form-group {
+  width: 300px !important;
+  color: $grey;
+
+  label {
+    font-weight: bold;
+  }
+  .form-control {
+    font-size: 14px !important;
+    height: 50px !important;
+    background-color: #f0f0f0;
+    border: 1px solid #f0f0f0;
+
+    &::placeholder {
+      color: $placeholder;
+    }
+    &.is-invalid {
+      border-color: #dc3545;
+    }
+  }
+}
+
+.ra-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ra-sub-title {
+  width: 300px;
+  font-size: 18px;
+  color: $placeholder;
+  letter-spacing: 1px;
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  opacity: 0 !important;
+  // transform: translateX(2em) !important;
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-to-active {
+  transition: all 0.2s ease !important;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0 !important;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s ease !important;
+}
+
+.left-fade-enter,
+.left-fade-leave-to {
+  opacity: 0 !important;
+  // transform: translateX(-3em) !important;
+}
+
+.left-fade-enter-active,
+.left-fade-leave-active {
+  transition: all 0.5s ease !important;
+}
+
+.top-fade-enter,
+.top-fade-leave-to {
+  opacity: 0 !important;
+  // transform: translateY(-3em) !important;
+}
+
+.top-fade-enter-active,
+.top-fade-leave-active {
+  transition: all 0.5s ease !important;
+}
+
+.alert-msg {
+  color: $red;
+}
+
+.timer {
+  color: $placeholder;
+}
+
+.modal-content {
+  border-radius: 1.5rem;
+  .modal-header {
+    padding: 40px 60px 0 60px;
+    border-bottom: none;
+    .modal-title {
+      font-weight: bold;
+    }
+  }
+  .modal-body {
+    .check {
+      color: #82c168;
+    }
+    .title {
+      font-weight: bold;
+    }
+    .sub-title {
+      color: $grey;
+      width: unset;
+    }
+    form {
+      .form-group {
+        width: 380px !important;
+        .confirm-btn {
+          width: 380px !important;
+        }
+      }
+    }
+  }
+  .modal-footer {
+    border-top: none;
+    button {
+      margin: 0 30px 60px 30px;
+      width: 414px;
+      color: #fff;
+      background-color: $blue;
+      border-color: $blue;
+      &:hover {
+        background-color: $blueHover;
+        border-color: $blueHover;
+      }
+      @media (max-width: 576px) {
+        margin: 0 0 60px 0;
+        width: 100%;
+      }
+    }
+  }
+  button.close {
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+.b-overlay {
+  position: fixed !important;
+  color: #2e83df;
+  .position-absolute {
+    position: fixed !important;
+  }
+}
